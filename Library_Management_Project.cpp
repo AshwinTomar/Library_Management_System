@@ -20,9 +20,9 @@ class book
         cout<<"\nEnter The book no.";
         cin>>bno;
         cout<<"\n\nEnter The Name of The Book ";
-        gets(bname);
+        cin>>bname;
         cout<<"\n\nEnter The Author's Name ";
-        gets(aname);
+        cin>>aname;
         cout<<"\n\n\nBook Created..";
     }
     void show_book()
@@ -37,9 +37,9 @@ class book
     {
         cout<<"\nBook no. : "<<bno;
         cout<<"\nModify Book Name : ";
-        gets(bname);
+        cin>>bname;
         cout<<"\nModify Author's Name of Book : ";
-        gets(aname);
+        cin>>aname;
     }
              char* retbno()
     {
@@ -63,8 +63,10 @@ public:
         system("CLS");
         cout<<"\nNEW STUDENT ENTRY...\n";
         cout<<"\nEnter The admission no. ";
+        getch();
         cin>>admno;
         cout<<"\n\nEnter The Name of The Student ";
+        getch();
         cin>>name;
         token=0;
         stbno[0]='\0';
@@ -83,7 +85,7 @@ public:
     {
         cout<<"\nAdmission no. : "<<admno;
         cout<<"\nModify Student Name : ";
-        gets(name);
+        cin>>name;
     }
     char* retadmno()
     {
